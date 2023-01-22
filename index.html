@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="txt">Hello Winter</h2>
+        <img src="images/monutain_01.png" alt="" id="m1">
+        <img src="images/monutain_02.png" alt="" id="m2">
+        <img src="images/monutain_03.png" alt="" id="m3">
+        <img src="images/monutain_04.png" alt="" id="m4">
+        <img src="images/trees.png" alt="" id="tr">
+        <img src="images/cable_cars.png" alt="" id="crs">
+        <img src="images/house.png" alt="" id="house">
+    </section>
+    <div class="sec">
+        <h2>Parallax Secrolling Website</h2>
+        <p>Parallax scrolling is a web design practice where different elements or layers of a website — such as the
+            foreground and background — move at different speeds. And parallax website design is simply a web design
+            that incorporates parallax scrolling. Parallax scrolling effects give a sense of depth and movement to a web
+            page, thus creating a more enjoyable user experience.
+            <br><br>
+            The most typical example of parallax web design is when a page’s background moves slower than its
+            foreground, visually creating more space between the two. However, various other parallax scrolling
+            techniques can add a special charm or an element of unpredictability to a website.
+            <br><br>
+            Early video games and computer graphics initially popularised parallax effects to create the illusion of
+            depth on a flat display. The same method of using multiple layers of images that move at varying speeds was
+            applied to achieve such an effect. It wasn’t until 2011 that this practice infiltrated the world of web
+            design with the introduction of HTML5 and CSS 3.
+            <br><br>
+            Like most web design techniques, parallax scrolling also has its unique set of benefits that have made it so
+            popular. If you’re debating whether parallax website design is for you, these benefits might convince you to
+            join the trend.
+            <br><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, suscipit! Possimus veniam in ducimus
+            necessitatibus aliquam optio temporibus magnam odio alias iste, expedita veritatis vitae tempora?
+            Reprehenderit sunt sapiente dolor consequatur autem esse eveniet recusandae ea? Fugit consectetur delectus
+            accusamus sequi est. Voluptatibus nihil soluta, repellat in fugiat mollitia nulla.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro at consequatur asperiores. Odio
+            excepturi distinctio, molestias mollitia dignissimos rerum a iusto quibusdam! Nulla, expedita repudiandae
+            rem modi nam dicta laudantium itaque, eligendi earum distinctio voluptatibus officia ex inventore cupiditate
+            obcaecati accusantium harum consectetur unde ipsum quaerat vitae atque facilis?
+        </p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#txt",{
+            scrollTrigger: {
+                scrub: true
+            },
+            x: 350,
+        })
+        gsap.from("#m1",{
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 100,
+        })
+        gsap.from("#m2",{
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 50,
+        })
+        gsap.from("#m3",{
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 200,
+        })
+        gsap.from("#m4",{
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 150,
+        })
+        gsap.from("#tr",{
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 150,
+        })
+        gsap.from("#crs",{
+            scrollTrigger: {
+                scrub: true
+            },
+            x: 100,
+        })
+        gsap.from("#house",{
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 50,
+        })
+
+
+
+    </script>
+</body>
+
+</html>
